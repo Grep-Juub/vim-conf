@@ -41,8 +41,8 @@ if has('nvim')
   \ 'text': 'E',
   \ 'texthl': 'ErrorMsg',
   \ }
-  let g:neomake_javascript_enabled_makers = ['eslint', 'flow']
-  let g:neomake_jsx_enabled_makers = ['eslint', 'flow']
+  let g:neomake_javascript_enabled_makers = ['eslint']
+  let g:neomake_jsx_enabled_makers = ['eslint']
 
   let g:neomake_javascript_flow_exe = g:flow_path
   let g:neomake_jsx_flow_exe = g:flow_path

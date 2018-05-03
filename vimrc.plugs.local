@@ -1,0 +1,18 @@
+Plug 'evanmiller/nginx-vim-syntax'
+Plug 'mustache/vim-mustache-handlebars'
+Plug 'tomasr/molokai'
+Plug 'digitaltoad/vim-pug'
+Plug 'xolox/vim-session'
+Plug 'xolox/vim-misc'
+Plug 'moll/vim-bbye'
+Plug 'groenewege/vim-less'
+Plug 'kchmck/vim-coffee-script'
+Plug 'fatih/vim-go'
+Plug 'zchee/deoplete-go'
+Plug 'hashivim/vim-terraform'
+Plug 'mileszs/ack.vim'
+Plug 'jparise/vim-graphql'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+

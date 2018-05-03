@@ -1,0 +1,56 @@
+syntax on
+set termguicolors
+set background=dark
+colorscheme molokai
+set listchars=eol:¬,tab:\|\ ,trail:.,extends:>,precedes:<
+hi SpecialKey ctermfg=gray guifg=darkgrey
+set list
+set number
+
+set undofile
+set undodir=$HOME/.vim/undo
+set mouse=
+set backupcopy=yes
+let g:prettier#config#bracket_spacing = 'true'
+" let g:enable_bold_font = 1
+let g:syntastic_jade_checkers = ['jade_lint']
+let g:airline#extensions#tabline#enabled = 1
+let g:session_autosave = 'yes'
+let g:session_autoload = 'no'
+
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
+" let g:fixmyjs_rc_path = '~/work/jobposting/.eslintrc'
+noremap <C-p> :bprev<CR>
+noremap <C-n> :bnext<CR>
+vnoremap <C-n> :Commentary<CR>
+nnoremap <Leader>q :Bdelete<CR>
+
+imap <C-Return> <CR><CR><C-o>k<Tab>
+command W :w
+
+set nohlsearch
+set shiftwidth=2
+set expandtab
+set softtabstop=2
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_guide_size= 1
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=darkgrey
+autocmd VimEnter * IndentGuidesToggle
+
+filetype plugin on
+
+inoremap <silent><expr> <TAB>
+    \ pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
+    \ deoplete#mappings#manual_complete()
+function! s:check_back_space() abort "{{{
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction"}}}
+
+

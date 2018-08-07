@@ -1,4 +1,7 @@
+Plug 'vim-scripts/lua.vim--Ko'
 Plug 'evanmiller/nginx-vim-syntax'
+Plug 'nanotech/jellybeans.vim'
+Plug 'kadekillary/Turtles'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'tomasr/molokai'
 Plug 'digitaltoad/vim-pug'
@@ -15,4 +18,11 @@ Plug 'jparise/vim-graphql'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'npm install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
-
+Plug 'ruanyl/vim-fixmyjs'
+Plug 'kshenoy/vim-signature'
+Plug 'spacewander/openresty-vim'
+Plug 'xolox/vim-lua-ftplugin'
+Plug 'junegunn/vim-emoji'
+Plug 'alunny/pegjs-vim'
+Plug 'tibabit/vim-templates'
+Plug 'sebdah/vim-delve'

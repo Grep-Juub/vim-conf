@@ -20,11 +20,10 @@ endif
 let g:deoplete#enable_at_startup = 1
 
 " == JavaScript syntax highlighting ==
-Plug 'othree/yajs.vim'
-Plug 'othree/es.next.syntax.vim'
-Plug 'mxw/vim-jsx'
-Plug 'pangloss/vim-javascript'
+" Plug 'othree/yajs.vim'
 Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'MaxMEllon/vim-jsx-pretty'
 
 " == SCSS and CSS syntax highlighting ==
 if v:version < 704

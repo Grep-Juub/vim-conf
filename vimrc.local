@@ -20,7 +20,7 @@ let g:session_autoload = 'no'
 let g:tmpl_search_paths = ['~/.templates.vim']
 let g:tmpl_author_email = 'paul.fournet@intercloud.fr'
 let g:tmpl_author_name = 'Paul Fournet'
-
+let g:sql_type_default = 'pgsql'
 
 let g:user_emmet_settings = {
   \  'javascript.jsx' : {
@@ -60,5 +60,3 @@ let g:lua_compiler_name = '/usr/local/bin/luac'
 let g:lua_complete_omni = 1
 " let b:lua_compiler_name = '/usr/local/bin/lualint'
 set completefunc=emoji#complete
-
-
